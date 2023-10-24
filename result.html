@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="/style/result-style.css">
     <title>Document</title>
 </head>
 <body>
     
-    <div class="containers result p-4 mt-4">
+    <div class="containers result p-4 mt-4" id="result">
         
         <!-- Section 1-->
 <div class="section1">
@@ -230,8 +231,94 @@
 </div>
 <!-- Section 5 ends here-->
 
+<!-- Section 6 ends here-->
+<div class="section6 ">
+<div class="rows p-2">
+    <div class="cols-1">
+        <div class="h6">Summary</div>
+        <div class="summary">
+            <table class="table table-bordered border-dark">
+                <thead>
+                  <tr>
+                    <th>TOTAL SCORE:</th>
+                    <th>AVG SCORE:</th>
+                    <th>GRADE:</th>
+                  
+                  
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>752/1000</td>
+                    <td>75.2%</td>
+                    <td>B</td>
+                 
+                    
+                  </tr>
+                </tbody>
+              </table>
+        </div>
     </div>
 
+    <div class="cols-2">
+        <div class="h6">Sinature / Stamp</div>
+        <img src="https://static.cdn.wisestamp.com/wp-content/uploads/2020/08/Oprah-Winfrey-Signature-1.png" width="100" alt="">
+    </div>
+</div>
+</div>
+<!-- Section 6 ends here-->
+
+
+<!-- Section 7 ends here-->
+<div class="section7 p-4">
+
+          <div class="teach-remark">CLASS TEACHER REMARKS: <span id="teacher-remark" class="fw-bold">A very promising child</span></div>
+        
+          <div class="head-remark mt-3">SCHOOL HEAD REMARKS: <span id="head-remark" class="fw-bold">Brilliant Performance</span></div>
+        
+    
+</div>
+<!-- Section 7 ends here-->
+
+<!-- Section 8 -->
+<p class="p-4">INFO TO PARENTS: <Span id="info-to-parent" class="fw-bold text-center">We thank God for an awesome term. Please be aware that next term PTA meeting will be on January 10th. Kindly pay fees on time too</Span>
+</p>
+<!-- Section 8 ends here-->
+
+    </div>
+
+    <div class="footer p-5 mt-5">
+        <div class="note">NOTE: For better print out use chrome browser</div>
+          <div class="btns">
+            <a href="#" class="btn btn-primary" id="print">Print</a>
+            <a href="#"  id="download" class="btn btn-success">Download</a>
+            <a href="#" class="btn btn-warning">Send to Email</a>
+          </div>
+        </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <script>
+        document.getElementById("download").addEventListener('click',()=>{
+  var element = document.getElementById('result');
+            // html2pdf().from(element).save();
+})
+         
+
+
+
+const printBtn=document.getElementById("print");
+printBtn.addEventListener("click",()=>{
+    print();
+})
+
+window.onload=function(){
+    const dwnBtn=document.getElementById("download");
+dwnBtn.addEventListener("click",()=>{
+const res=document.getElementById("result");
+})
+}
+
+    </script>
 </body>
 </html>
