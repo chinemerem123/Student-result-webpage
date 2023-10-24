@@ -1,0 +1,74 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+.result {
+  width: 1020px;
+  border: 2px solid black;
+  transform: scale(1);
+  position: relative;
+  left: calc(50% - 510px);
+}
+
+.section1 {
+  height: 200px;
+  border-bottom: 1px solid black;
+}
+.section1 .rows {
+  display: flex;
+}
+.section1 .rows .logo {
+  height: inherit;
+  border-right: 1px solid black;
+  width: 300px;
+}
+.section1 .rows .logo img {
+  height: 200px;
+}
+.section1 .rows .school-info {
+  height: 200px;
+  width: 600px;
+}
+.section1 .rows .user-position {
+  height: 200px;
+  border-left: 1px solid black;
+  width: 300px;
+}
+
+.section2 {
+  border-bottom: 1px solid black;
+}
+
+.section3 {
+  border-bottom: 1px solid black;
+}
+.section3 .rows {
+  display: flex;
+}
+.section3 .rows .cols-1 {
+  width: 330px;
+  border-right: 1px solid black;
+}
+.section3 .rows .cols-2 {
+  width: 330px;
+  border-right: 1px solid black;
+}
+
+.section4 {
+  font-size: 14px;
+}
+
+@media screen and (max-width: 800px) {
+  .result {
+    width: 1000px;
+    left: calc(50% - 500px);
+    transform: scale(0.4);
+  }
+}/*# sourceMappingURL=result-style.css.map */
