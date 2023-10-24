@@ -62,7 +62,11 @@ body {
 }
 
 .section4 {
-  font-size: 14px;
+  font-size: 12px;
+}
+
+.section5 {
+  font-size: 12px;
 }
 
 @media screen and (max-width: 800px) {
